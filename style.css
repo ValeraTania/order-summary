@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root{
+--paleBlue: hsl(225, 100%, 94%);
+--brightBlue: hsl(245, 75%, 52%);
+--veryPaleBlue: hsl(225, 100%, 98%);
+--desaturatedBlue: hsl(224, 23%, 55%);
+--darkBlue: hsl(223, 47%, 23%);
+--white:hsl(0, 0%, 100%);
+}
+
+body{
+    font-family: "Red Hat Display", sans-serif;
+    background-color: var(--paleBlue);
+    background-image: url(./images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+    
+}
+
+.order{
+    background-color: var(--white);
+    border-radius: 12px;
+    height: 566px;
+    width: 330px;
+    overflow: hidden;  
+    text-align: center;
+    box-shadow: 0 12px 20px var(--paleBlue);
+   
+}
+
+.order__image{
+    
+    background-image: url(./images/illustration-hero.svg);
+    background-repeat: no-repeat;
+    height: 160px;
+    background-size: cover;
+    
+}
+
+h3{
+    font-weight: 900;
+    color: var(--darkBlue);
+    margin: 18px auto 16px;
+}
+
+.order__info__description{
+    font-size: 16px;
+    color: var(--desaturatedBlue);
+    line-height: 28px;
+    width: 80%;
+    margin: auto;
+    
+}
+
+.order__details{
+    background-color: var(--veryPaleBlue);
+    width: 70%;
+    border-radius: 6px;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    padding: 16px 16px;
+    
+}
+
+.order__details__info{
+    display: flex;
+    gap: 16px;
+    line-height: 4px;
+    
+}
+
+img{
+    width: 40px;
+    height: 40px;
+}
+
+.order__details__plan{
+    font-weight: 900;
+    color: var(--darkBlue);
+}
+
+.order__details__price{
+    color: var(--desaturatedBlue);
+}
+
+.order__details a:hover{
+    color: var(--brightBlue);
+    text-decoration: none;
+}
+
+button{
+    border-radius: 6px;
+    border: none;
+    background-color: var(--brightBlue);
+    width: 80%;
+    color: var(--white);
+    padding: 12px;
+    box-shadow: 0 12px 24px var(--paleBlue);
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 30px;
+    letter-spacing: .5px;
+    }
+
+button:hover{
+    cursor: pointer;
+    background-color: var(--brightBlue);
+    opacity: .8;
+}
+
+.order__options a{
+    
+    color: var(--desaturatedBlue);
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    font-weight: 900;
+    
+}
+
+.order__options a:hover{
+    
+    color: var(--darkBlue);
+
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+        color: hsl(228, 45%, 44%); 
+}
+
+/*----------------Desktop------------*/
+
+@media (min-width:620px) {
+    body{
+        background-image: url(./images/pattern-background-desktop.svg);
+        
+    }
+    .order{
+        height: 700px;
+        width: 450px;
+
+    } 
+
+    .order__image{
+        height: 220px;
+    }
+    
+    h3{
+        margin: 56px auto 34px;
+    }
+    .order__details, button{
+        width: 70%;
+        
+    }
+
+   
+
+}
